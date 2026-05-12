@@ -1,0 +1,199 @@
+/* Variabel Warna Fleura */
+:root {
+    --hijau-tua: rgb(20, 72, 27);
+    --hijau-muda: rgb(129, 178, 73);
+    --dusty-red: rgb(197, 99, 99);
+    --vivid-yellow: rgb(255, 207, 51);
+    --soft-blush: #F9EBEA; /* Warna latar belakang yang hangat & bersih */
+    --text-dark: #333333;
+    --font-headline: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    background-color: #FAFAFA;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-headline);
+    font-weight: 700;
+    color: var(--hijau-tua);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--dusty-red);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--hijau-tua);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--dusty-red);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--soft-blush);
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: var(--dusty-red);
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.btn-primary {
+    background-color: var(--hijau-tua);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--hijau-muda);
+}
+
+/* Sections */
+section {
+    padding: 80px 50px;
+}
+
+.about {
+    background-color: white;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Product Section */
+.product {
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.product h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--vivid-yellow);
+}
+
+.product-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--dusty-red);
+}
+
+.product-info p {
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 2px solid var(--dusty-red);
+    color: var(--dusty-red);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--dusty-red);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--hijau-tua);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer h2 {
+    color: white;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--vivid-yellow);
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}

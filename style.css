@@ -197,3 +197,26 @@ footer a {
     font-size: 0.9rem;
     opacity: 0.7;
 }
+/* Styling untuk Foto Produk */
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Agar foto turun ke bawah otomatis jika dibuka di HP */
+}
+
+.product-image {
+    width: 100%;
+    max-width: 350px; /* Ukuran maksimal foto */
+    height: auto;
+    border-radius: 15px; /* Membuat sudut foto agak membulat */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Efek bayangan estetik */
+    transition: transform 0.3s ease;
+}
+
+/* Efek sedikit membesar saat foto disentuh cursor */
+.product-image:hover {
+    transform: translateY(-5px);
+}
